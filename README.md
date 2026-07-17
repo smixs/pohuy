@@ -45,7 +45,7 @@ investigation", только сразу ясно.
 </td>
 <td valign="top">
 
-> Наебнулась auth middleware: expiry проверяется через `<` вместо `<=`. Хуяк:
+> Ну, пиздец! auth middleware: expiry проверяется через жопу `<` вместо `<=`. Заебало
 
 </td>
 </tr>
