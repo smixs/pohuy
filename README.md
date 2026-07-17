@@ -1,7 +1,7 @@
 <h1 align="center">ПОХУЙ</h1>
 
 <p align="center">
-  <strong>Похуй на весь словарь, когда есть четыре корня</strong>
+  <strong>Зачем весь словарь, когда есть четыре корня</strong>
 </p>
 
 <p align="center">
