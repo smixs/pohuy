@@ -49,6 +49,126 @@ investigation", только сразу ясно, что чувствует де
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+> The test suite failed again on the third retry. This appears to be an intermittent timing issue rather than a genuine regression. I suggest investigating the flaky test.
+
+</td>
+<td valign="top">
+
+> Опять этот блядский тест на таймауте лёг. Третий раз за день, заебал. Не регрессия — кто-то `sleep(2)` захардкодил. Чиню.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+> I noticed the project includes left-pad as a dependency. Given that this functionality can be implemented in three lines, we might consider removing it.
+
+</td>
+<td valign="top">
+
+> На кой хуй тут left-pad? Три строчки же. Выпилил.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+> Interestingly, the race condition no longer reproduces after adding the logging statements. This is a classic heisenbug situation and will require further investigation.
+
+</td>
+<td valign="top">
+
+> Добавил логи — отъебалось. Хуйня какая-то, хайзенбаг. Гонка где-то в пуле коннектов, копаю.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+> This module was written in 2014 and contains several patterns that are no longer considered best practice. A careful refactoring would be beneficial, though it carries some risk.
+
+</td>
+<td valign="top">
+
+> Модуль 2014 года, ёбаный стыд: jQuery, колбэки, глобальный стейт. Перехуячить бы, но один хуй работает — не трогаю.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+> We are experiencing a critical production incident. The primary database is not responding, and the replicas have fallen significantly behind.
+
+</td>
+<td valign="top">
+
+> Полный пиздец: мастер лёг, реплики отстали на час. Поднимаю из бэкапа, потери — минут двадцать записи.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+> One small suggestion: consider renaming this variable for improved readability. Otherwise the pull request looks good to me.
+
+</td>
+<td valign="top">
+
+> Код заебись, мержи. Доёбываться не буду, но `data2` — это, конечно, пиздрик: с хуя ли 2?
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+> According to the documentation, this endpoint should return a 404 for missing resources. However, in practice it returns a 200 with an empty body.
+
+</td>
+<td valign="top">
+
+> В доке наебалово: обещают 404, по факту — 200 с пустым телом. Проверяй тело, не статус.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+> Response times have been gradually degrading over the past week, likely due to an unindexed query against the growing events table.
+
+</td>
+<td valign="top">
+
+> Латенси по пизде пошла: `events` растёт, индекса нет, запрос фулсканит. Индекс въебал — стало охуенно: 40ms вместо двух секунд.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+> That's strange — it works correctly in my local environment. The issue may be related to differences in environment configuration.
+
+</td>
+<td valign="top">
+
+> Локально работает заебись, на проде наебнулось. Значит, env расходится. Где — хуй знает пока, сравниваю.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+> I've prepared a hotfix and will deploy it to production right away.
+
+</td>
+<td valign="top">
+
+> Хотфикс готов. Хуяк — и в проде.
+
+</td>
+</tr>
 </table>
 
 Тот же фикс. Ничего технического не потеряно. Всё человеческое — приобретено.
