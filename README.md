@@ -9,6 +9,11 @@
   С первого слова понятно, работает оно — или наебнулось.
 </p>
 
+<p align="center">
+  <a href="./ЧЕСТНЫЕ-ЦИФРЫ.md"><img src="https://img.shields.io/badge/экономия_корней-~96%25-brightgreen" alt="экономия корней ~96%"></a>
+  <a href="./ЧЕСТНЫЕ-ЦИФРЫ.md"><img src="https://img.shields.io/badge/доказано-ЧЕСТНЫЕ--ЦИФРЫ.md-blue" alt="доказано"></a>
+</p>
+
 <p align="center"><sub>18+ · мат идиоматический, не машинный · вдохновлено <a href="https://github.com/JuliusBrussee/caveman">caveman</a></sub></p>
 
 ---
