@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "pizdec",
+  "description": "Режим идиоматического русского мата для AI-агентов.",
+  "owner": {
+    "name": "Serge Shima",
+    "url": "https://github.com/smixs"
+  },
+  "plugins": [
+    {
+      "name": "pizdec",
+      "description": "Агент отвечает как живой русский инженер: «наебнулось», «хуйня вопрос», «заебись, работает».",
+      "source": "./",
+      "category": "fun"
+    }
+  ]
+}
