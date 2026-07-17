@@ -206,7 +206,7 @@ claude plugin marketplace add smixs/pohuy && claude plugin install pohuy@pohuy
 npx skills add smixs/pohuy
 ```
 
-## **Включить:** `/pohuy` или скажи «заебал». **Выключить:** «нормальный режим».
+## **Включить:** `/pohuy` или скажи «та мне похуй / заебал». **Выключить:** «нормальный режим».
 
 ## Выбери калибр
 
