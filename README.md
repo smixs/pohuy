@@ -1,4 +1,4 @@
-<h1 align="center">пиздец</h1>
+<h1 align="center">похуй</h1>
 
 <p align="center">
   <strong>зачем тебе весь словарь, когда есть четыре корня</strong>
@@ -14,7 +14,7 @@
 ---
 
 Русский мат — генеративная морфология: четыре корня плюс приставки и суффиксы
-порождают полный технический словарь. Caveman экономит слова. Пиздец экономит корни.
+порождают полный технический словарь. Caveman экономит слова. Похуй экономит корни.
 Одно «наебнулось» — это "the service has unexpectedly crashed and requires
 investigation", только сразу ясно, что чувствует дежурный.
 
@@ -23,7 +23,7 @@ investigation", только сразу ясно, что чувствует де
 <table>
 <tr>
 <th width="50%">🗣️ Обычный агент</th>
-<th width="50%">🚬 Пиздец</th>
+<th width="50%">🚬 Похуй</th>
 </tr>
 <tr>
 <td valign="top">
@@ -189,17 +189,17 @@ investigation", только сразу ясно, что чувствует де
 
 ```bash
 # Claude Code — плагин
-claude plugin marketplace add smixs/pizdec && claude plugin install pizdec@pizdec
+claude plugin marketplace add smixs/pohuy && claude plugin install pohuy@pohuy
 
 # Cursor / Codex / Windsurf и прочие — через skills registry
-npx skills add smixs/pizdec
+npx skills add smixs/pohuy
 ```
 
-**Включить:** `/pizdec` или скажи «говори матом». **Выключить:** «нормальный режим».
+**Включить:** `/pohuy` или скажи «говори матом». **Выключить:** «нормальный режим».
 
 ## Выбери калибр
 
-Три уровня. Переключение: `/pizdec <уровень>`. Держится до конца сессии.
+Три уровня. Переключение: `/pohuy <уровень>`. Держится до конца сессии.
 
 | Уровень | Та же мысль |
 |---|---|
