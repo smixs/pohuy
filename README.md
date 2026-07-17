@@ -14,7 +14,7 @@
   <a href="./ЧЕСТНЫЕ-ЦИФРЫ.md"><img src="https://img.shields.io/badge/доказано-ЧЕСТНЫЕ--ЦИФРЫ.md-blue" alt="доказано"></a>
 </p>
 
-<p align="center"><sub>18+ · мат идиоматический, не машинный · вдохновлено <a href="https://github.com/JuliusBrussee/caveman">caveman</a></sub></p>
+<p align="center"><sub>18+ · мат идиоматический, прикладной, народный. · вдохновлено <a href="https://github.com/JuliusBrussee/caveman">caveman</a></sub></p>
 
 ---
 
