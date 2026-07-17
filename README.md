@@ -235,4 +235,4 @@ npx skills add smixs/pohuy
 
 ---
 
-<sub>MIT — свободен, нахуй.</sub>
+<sub>MIT — не ебите головы.</sub>
