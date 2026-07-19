@@ -49,12 +49,12 @@ investigation", только сразу ясно.
 <tr>
 <td valign="top">
 
-> I'd be happy to help! The issue you're experiencing is most likely caused by your authentication middleware not properly validating the token expiry. Let me take a look and suggest a fix.
+> The rebase completed remarkably smoothly — all forty commits applied cleanly without a single merge conflict.
 
 </td>
 <td valign="top">
 
-> Ну, пиздец! auth middleware: expiry проверяется через жопу `<` вместо `<=`. 
+> Ребейз вошёл как слива в жопу: сорок коммитов, ни одного конфликта.
 
 </td>
 </tr>
