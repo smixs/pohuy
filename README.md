@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./docs/assets/pohuy.webp" alt="ПОХУЙ" width="600">
+</p>
+
 <h1 align="center">ПОХУЙ</h1>
 
 <p align="center">
