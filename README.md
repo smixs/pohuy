@@ -296,10 +296,6 @@ npx skills add smixs/pohuy
 2. ???
 3. Профит!
 
-## Звёзды
-
-[![Star History Chart](https://api.star-history.com/svg?repos=smixs/pohuy&type=Date)](https://www.star-history.com/#smixs/pohuy&Date)
-
 ---
 
 <sub>MIT — не ебите головы.</sub>
