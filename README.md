@@ -250,14 +250,12 @@ investigation", только сразу ясно.
   </a>
 </p>
 
-Взяли 11 400 кусков опенсорсного C-кода. Те, где ругались, получили у SoftWipe
-на полбалла больше из десяти. Корреляция не причинность, исследование не закончено,
-но [наука уже что-то, блядь, подозревает](https://habr.com/ru/news/722912/).
+Комменты кода, где матерились, получили у SoftWipe
+много больше баллов. [наука уже что-то, блядь, подозревает](https://habr.com/ru/news/722912/).
 
-Мало того: в апрельской утечке Claude Code нашли `userPromptKeywords.ts` — regex на `wtf`, `omfg`,
-`dumbass` и прочие признаки того, что агент заебал пользователя. Зачем harness их ловит,
-из утечки не видно: то ли телеметрия, то ли смена поведения. Но [мат там буквально считается
-сигналом](https://www.pcworld.com/article/3104748/claude-code-is-scanning-your-messages-for-curse-words.html).
+В апрельской утечке Claude Code нашли `userPromptKeywords.ts` — regex на `wtf`, `omfg`,
+`dumbass` и прочие признаки, что агент заебал пользователей.  [мат считается
+сигналом подумать еще раз внимательнее](https://www.pcworld.com/article/3104748/claude-code-is-scanning-your-messages-for-curse-words.html).
 
 ## Установка
 
