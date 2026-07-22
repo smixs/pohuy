@@ -325,6 +325,26 @@ npx skills add smixs/pohuy
 2. ???
 3. Профит!
 
+## Омаж
+
+Скилл вылез из стрима [«Харнес будущего»](https://youtube.com/live/LAUdN1-4mgI) —
+про то, как harness ругается по-человечески.
+
+- [Константин Доронин](https://t.me/kdoronin_blog)
+- [Александр Абрамов](https://t.me/dealerAI)
+- [Павел Рыков](https://t.me/evilfreelancer)
+- [Тимур Хахалев](https://t.me/the_ai_architect)
+
+### Соавторы висложопые
+
+Лучший чат [«Дизраптим агентов»](https://t.me/aostrikov_agents_chat):
+
+- [Алексей Остриков](https://t.me/aostrikov)
+- [Mitry AI](https://t.me/imitry)
+- [Пух](https://t.me/nyxandro)
+- [Максим Функ](https://t.me/maximilian_da_funkmaster)
+- [t0uchY](https://t.me/t0uchY)
+
 ---
 
 <sub>MIT — не ебите головы.</sub>
