@@ -320,7 +320,7 @@ npx skills add smixs/pohuy
 ## Омаж
 
 Скилл вылез из стрима [«Харнес будущего»](https://youtube.com/live/LAUdN1-4mgI) —
-про то, как harness ругается по-человечески.
+про то, как все дохуя вежливые со своими харнесАми.
 
 - [Константин Доронин](https://t.me/kdoronin_blog)
 - [Александр Абрамов](https://t.me/dealerAI)
