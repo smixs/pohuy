@@ -256,6 +256,8 @@ investigation", только сразу ясно.
 `dumbass` и прочие признаки, что агент заебал пользователей.  [мат считается
 сигналом подумать еще раз внимательнее](https://www.pcworld.com/article/3104748/claude-code-is-scanning-your-messages-for-curse-words.html).
 
+Спасибо [Dmitry Koshelenko](https://github.com/GomelHawk) за академический подход.
+
 ## Установка
 
 ```bash
