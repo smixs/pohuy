@@ -238,17 +238,11 @@ investigation", только сразу ясно.
 
 ## Бенчей подвезли
 
-```
-SWE-BENCH PRO · AGENTIC CODING
+<p align="center">
+  <img src="docs/swe-bench-pro.jpg" alt="SWE-Bench Pro: Fable + pohuy 80.3%, Fable 69.2%" width="720">
+</p>
 
-Fable + pohuy  ████████████████  80.3%
-Fable          ██████████████    69.2%
-
-Разница: +11.1 п.п.
-```
-
-SWE-BENCH PRO: прикрутили к Fable режим «похуй» — стало 80.3% вместо 69.2%.
-Плюс 11.1 пункта. Наука в ахуе, агент просто перестал коноёбиться.
+<p align="center"><sub>SWE-BENCH PRO: Fable + pohuy — 80.3% против 69.2%. Плюс 11.1 пункта. Меньше коноёбишься — больше решаешь.</sub></p>
 
 <p align="center">
   <a href="https://habr.com/ru/news/722912/">
