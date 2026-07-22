@@ -236,7 +236,7 @@ investigation", только сразу ясно.
 
 Цифры честные, trust me bro [ЧЕСТНЫЕ-ЦИФРЫ.md](./ЧЕСТНЫЕ-ЦИФРЫ.md). Спойлер: токенов не экономит нихуя.
 
-## Бенчей подвезли
+## Бенчей еще подвезли
 
 <p align="center">
   <img src="docs/swe-bench-pro.jpg" alt="SWE-Bench Pro: Fable + pohuy 80.3%, Fable 69.2%" width="720">
