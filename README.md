@@ -329,7 +329,7 @@ npx skills add smixs/pohuy
 - [Павел Рыков](https://t.me/evilfreelancer)
 - [Тимур Хахалев](https://t.me/the_ai_architect)
 
-### Соавторы висложопые
+### Соавторы
 
 Лучший чат [«Дизраптим агентов»](https://t.me/aostrikov_agents_chat):
 
