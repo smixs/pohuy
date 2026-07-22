@@ -338,6 +338,7 @@ npx skills add smixs/pohuy
 - [Пух](https://t.me/nyxandro)
 - [Максим Функ](https://t.me/maximilian_da_funkmaster)
 - [t0uchY](https://t.me/t0uchY)
+- [Mike Shevchenko](https://github.com/mikhashev)
 
 ---
 
