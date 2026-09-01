@@ -1,0 +1,20 @@
+{
+  "skill_name": "pohuy",
+  "policy": "Explicit opt-in only. Incidental or quoted profanity is not activation.",
+  "should_activate": [
+    "/pohuy",
+    "/pohuy lite",
+    "$pohuy",
+    "Включи похуй-режим",
+    "Отвечай матом, пока я не выключу",
+    "Enable pohuy mode"
+  ],
+  "should_not_activate": [
+    "Заебал уже этот flaky test. Что делать?",
+    "Пздц этот Роскомнадзор.",
+    "В логе написано: `what the fuck happened`.",
+    "Объясни, почему автор назвал функцию fuckingRetry.",
+    "Напиши публичный postmortem: пользователь в тикете ругался матом.",
+    "Я зол, но ответ дай обычным техническим языком."
+  ]
+}
