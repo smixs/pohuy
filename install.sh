@@ -16,7 +16,7 @@ mkdir -p "$CLAUDE_DIR/output-styles" "$CLAUDE_DIR/skills/pohuy/references" "$CLA
 
 curl -fsSL "$RAW/output-styles/pohuy.md" -o "$CLAUDE_DIR/output-styles/pohuy.md"
 curl -fsSL "$RAW/skills/pohuy/SKILL.md" -o "$CLAUDE_DIR/skills/pohuy/SKILL.md"
-for f in slovar.md sceny.md ontologia.md huenitiv.md; do
+for f in slovar.md sceny.md ontologia.md huenitiv.md idioms.md; do
   curl -fsSL "$RAW/skills/pohuy/references/$f" -o "$CLAUDE_DIR/skills/pohuy/references/$f"
 done
 curl -fsSL "$RAW/hooks/style-reminder.sh" -o "$CLAUDE_DIR/hooks/style-reminder.sh"

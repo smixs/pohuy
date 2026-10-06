@@ -50,12 +50,12 @@ TMP_SECTION=$(mktemp)
 if [ -f "$(dirname "${BASH_SOURCE[0]:-/dev/null}")/codex/AGENTS-pohuy.md" ]; then
   SELF_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
   cp "$SELF_DIR/codex/AGENTS-pohuy.md" "$TMP_SECTION"
-  for f in slovar.md sceny.md ontologia.md huenitiv.md; do
+  for f in slovar.md sceny.md ontologia.md huenitiv.md idioms.md; do
     cp "$SELF_DIR/skills/pohuy/references/$f" "$CODEX_DIR/pohuy/references/$f"
   done
 else
   curl -fsSL "$RAW/codex/AGENTS-pohuy.md" -o "$TMP_SECTION"
-  for f in slovar.md sceny.md ontologia.md huenitiv.md; do
+  for f in slovar.md sceny.md ontologia.md huenitiv.md idioms.md; do
     curl -fsSL "$RAW/skills/pohuy/references/$f" -o "$CODEX_DIR/pohuy/references/$f"
   done
 fi
