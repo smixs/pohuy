@@ -1,0 +1,5 @@
+*.sh text eol=lf
+/LICENSE text eol=lf
+/skills/pohuy/SKILL.md text eol=lf
+/skills/pohuy/references/**/*.md text eol=lf
+/opencode/**/*.md text eol=lf
