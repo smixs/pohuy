@@ -89,7 +89,7 @@ export type StyleSource = {
   options: SourceOption[];
   roots: Record<Exclude<SettingsSection, "general">, ConfigNode[]>;
 };
-type SourceDocuments = {
+export type SourceDocuments = {
   skill: string;
   dictionary: string;
   scenes: string;
@@ -470,6 +470,10 @@ export async function loadStyleSource(): Promise<StyleSource> {
     readFile(SCENES_PATH, "utf8"),
     readFile(HUENITIV_PATH, "utf8"),
   ]);
+  return parseStyleSource({ skill, dictionary: slovar, scenes, huenitiv });
+}
+
+export function parseStyleSource({ skill, dictionary: slovar, scenes, huenitiv }: SourceDocuments): StyleSource {
   const levels = extractSkillSection(skill, "Уровни");
   const nonOptionalDictionaryHeading = requiredHeadingWithPrefix(
     slovar,

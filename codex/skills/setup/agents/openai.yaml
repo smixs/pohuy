@@ -1,0 +1,4 @@
+interface:
+  display_name: "Знакомство с Pohuy"
+  short_description: "Выбрать уровень и настроить разговор под себя"
+  default_prompt: "Используй $setup, чтобы настроить Pohuy под меня."

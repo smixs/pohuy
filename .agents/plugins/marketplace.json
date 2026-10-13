@@ -1,0 +1,20 @@
+{
+  "name": "pohuy",
+  "interface": {
+    "displayName": "Pohuy"
+  },
+  "plugins": [
+    {
+      "name": "pohuy",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

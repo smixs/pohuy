@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "pohuy-settings": {
+      "command": "node",
+      "args": [
+        "dist/server.mjs"
+      ],
+      "cwd": "./codex"
+    }
+  }
+}

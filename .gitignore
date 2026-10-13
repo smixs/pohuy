@@ -3,3 +3,6 @@ implementation-notes.md
 node_modules/
 .pi/
 pohuy-workspace/
+codex/dist/
+assets/icon.png
+assets/icon.svg

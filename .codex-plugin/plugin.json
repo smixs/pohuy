@@ -1,0 +1,39 @@
+{
+  "name": "pohuy",
+  "version": "0.5.1",
+  "description": "Русский инженерный разговор: по делу, с характером, без церемоний.",
+  "author": {
+    "name": "Serge Shima",
+    "url": "https://github.com/smixs"
+  },
+  "repository": "https://github.com/smixs/pohuy",
+  "license": "MIT",
+  "skills": "./codex/skills/",
+  "mcpServers": "./codex/mcp.json",
+  "hooks": "./codex/hooks/hooks.json",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./codex/skills/setup/SKILL.md"
+    }
+  },
+  "interface": {
+    "displayName": "Pohuy",
+    "shortDescription": "Двадцать лет на проде.",
+    "longDescription": "Pohuy говорит как инженер после двадцати лет дежурств: прямо, с живыми идиомами и чувством масштаба. Выбери уровень lite, full или ultra, подключи словарь и сцены под свой вкус. Техническая точность остаётся, канцелярский тон уходит. Код и рабочие документы сохраняют принятый стиль.",
+    "developerName": "Serge Shima",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Давай настроим Pohuy под меня.",
+      "На каком уровне мы сейчас разговариваем?",
+      "Верни обычный тон, Pohuy пока выключи."
+    ],
+    "websiteURL": "https://github.com/smixs/pohuy",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  }
+}

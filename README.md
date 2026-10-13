@@ -291,27 +291,32 @@ curl -fsSL https://raw.githubusercontent.com/smixs/pohuy/main/install.sh | bash
 воспринимает Pohuy как встроенный, и тон не выцветает даже к сотому ходу.
 Перезапусти сессию — и всё. Вернуть обычный тон: `/config` → Output style → `Default`.
 
-## Codex CLI
+## Codex
 
-Та же схема для OpenAI Codex CLI — одной командой:
+Плагин загружает Pohuy с начала чата и возвращает стиль после сжатия контекста.
+Уровень `lite`, `full` или `ultra` сохраняется между сессиями.
+В настройках можно выбрать объём ответа, шутки по делу и материалы из исходного скилла.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/smixs/pohuy/main/install-codex.sh | bash
-```
-
-Скрипт дописывает секцию Pohuy в `~/.codex/AGENTS.md` (глобальные инструкции,
-грузятся каждую сессию; твоё содержимое файла не трогается — секция живёт между
-маркерами), кладёт словарь в `~/.codex/pohuy/references/` и регистрирует
-`UserPromptSubmit`-хук в `~/.codex/hooks.json` — то же ежеходовое подкрепление,
-что и в Claude Code. Обновление — та же команда. Снести:
+Для работы нужен Node.js 22.19 или новее. Из клона репозитория:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/smixs/pohuy/main/install-codex.sh | bash -s -- --uninstall
+npm ci
+npm run package:codex -- ~/.local/share/pohuy-marketplace --compat
+codex plugin marketplace add ~/.local/share/pohuy-marketplace
+codex plugin add pohuy@pohuy
 ```
 
-Если хуки не срабатывают — включи их в `~/.codex/config.toml`:
-`[features]` → `codex_hooks = true`. Чтобы встроенный характер Codex не спорил
-с Pohuy, там же можно поставить `personality = "none"`.
+Каталог пакета должен быть новым. Включи хуки Codex и подтверди доверие к командам
+Pohuy. Затем открой новый чат и попроси: "Давай настроим Pohuy под меня".
+Настройки доступны в карточке плагина на клиентах с поддержкой `openai/settings`
+или через чат. При работе по SSH они сохраняются на хосте выполнения инструментов.
+
+Плагин использует исходный текст Pohuy и общий с Pi разборщик. Отдельную копию
+стиля в `AGENTS.md` поддерживать не нужно.
+
+[Установка, сборка ZIP и ограничения клиентов](./codex/README.md).
+Если раньше использовал `install-codex.sh`, сначала прочитай
+[инструкцию перехода](./codex/README.md#миграция-старой-установки).
 
 ## Pi
 

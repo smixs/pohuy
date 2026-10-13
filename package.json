@@ -8,29 +8,50 @@
   },
   "scripts": {
     "test": "node --import tsx --test extensions/pohuy.test.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:codex": "npm run build:codex && node --import tsx --test codex/tests/*.test.ts",
+    "build:codex": "node codex/scripts/build.mjs",
+    "typecheck:codex": "tsc --noEmit -p codex/tsconfig.json",
+    "package:codex": "npm run build:codex && node codex/scripts/package.mjs"
   },
   "keywords": [
     "pi-package"
   ],
   "files": [
     ".claude-plugin/",
+    ".codex-plugin/",
+    "assets/",
+    "codex/mcp.json",
+    ".agents/plugins/marketplace.json",
+    "codex/hooks/hooks.json",
+    "codex/skills/",
+    "codex/README.md",
     "commands/",
     "docs/",
     "extensions/pohuy.ts",
     "extensions/pohuy/",
     "extensions/README.md",
     "skills/",
-    "ЧЕСТНЫЕ-ЦИФРЫ.md"
+    "ЧЕСТНЫЕ-ЦИФРЫ.md",
+    "plugin.json",
+    "mcp.json",
+    "codex/dist/"
   ],
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*",
     "@earendil-works/pi-tui": "*"
   },
   "devDependencies": {
+    "@cfworker/json-schema": "4.1.1",
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "@openai/mcp-extensions": "0.1.0",
     "@types/node": "^24.0.0",
+    "esbuild": "0.28.2",
+    "fflate": "0.8.3",
+    "sharp": "0.35.5",
     "tsx": "^4.20.0",
-    "typescript": "^5.9.0"
+    "typescript": "^5.9.0",
+    "zod": "4.4.3"
   },
   "pi": {
     "extensions": [

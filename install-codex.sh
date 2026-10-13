@@ -44,21 +44,28 @@ PY
   exit 0
 fi
 
+command -v node >/dev/null 2>&1 || { echo "Нужен Node.js 22.19 или новее."; exit 1; }
+node -e 'const [major, minor] = process.versions.node.split(".").map(Number); if (major < 22 || (major === 22 && minor < 19)) process.exit(1)' || { echo "Нужен Node.js 22.19 или новее."; exit 1; }
+
 mkdir -p "$CODEX_DIR/pohuy/references"
 
 TMP_SECTION=$(mktemp)
-if [ -f "$(dirname "${BASH_SOURCE[0]:-/dev/null}")/codex/AGENTS-pohuy.md" ]; then
-  SELF_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-  cp "$SELF_DIR/codex/AGENTS-pohuy.md" "$TMP_SECTION"
-  for f in slovar.md sceny.md ontologia.md huenitiv.md; do
-    cp "$SELF_DIR/skills/pohuy/references/$f" "$CODEX_DIR/pohuy/references/$f"
-  done
+TMP_SOURCE=$(mktemp -d)
+trap 'rm -f -- "$TMP_SECTION"; rm -rf -- "$TMP_SOURCE"' EXIT
+SELF_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-/dev/null}")" && pwd)"
+if [ -f "$SELF_DIR/codex/scripts/legacy-prompt.mjs" ]; then
+  SOURCE_ROOT="$SELF_DIR"
 else
-  curl -fsSL "$RAW/codex/AGENTS-pohuy.md" -o "$TMP_SECTION"
-  for f in slovar.md sceny.md ontologia.md huenitiv.md; do
-    curl -fsSL "$RAW/skills/pohuy/references/$f" -o "$CODEX_DIR/pohuy/references/$f"
+  SOURCE_ROOT="$TMP_SOURCE"
+  for f in codex/scripts/legacy-prompt.mjs extensions/pohuy/style-source.ts skills/pohuy/SKILL.md skills/pohuy/references/{slovar,sceny,ontologia,huenitiv}.md; do
+    mkdir -p "$SOURCE_ROOT/$(dirname "$f")"
+    curl -fsSL "$RAW/$f" -o "$SOURCE_ROOT/$f"
   done
 fi
+node "$SOURCE_ROOT/codex/scripts/legacy-prompt.mjs" > "$TMP_SECTION"
+for f in slovar.md sceny.md ontologia.md huenitiv.md; do
+  cp "$SOURCE_ROOT/skills/pohuy/references/$f" "$CODEX_DIR/pohuy/references/$f"
+done
 
 python3 - "$CODEX_DIR" "$TMP_SECTION" "$REMINDER" <<'PY'
 import json, os, re, sys

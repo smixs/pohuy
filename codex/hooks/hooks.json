@@ -1,0 +1,31 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "^(startup|resume|clear|compact)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${PLUGIN_ROOT}/codex/dist/controller.mjs\" hook SessionStart",
+            "timeout": 5,
+            "statusMessage": "Загрузка режима Pohuy",
+            "additionalContextLimit": 65536
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${PLUGIN_ROOT}/codex/dist/controller.mjs\" hook UserPromptSubmit",
+            "timeout": 5,
+            "statusMessage": "Проверка режима Pohuy",
+            "additionalContextLimit": 65536
+          }
+        ]
+      }
+    ]
+  }
+}
