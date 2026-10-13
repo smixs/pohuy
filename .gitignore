@@ -3,3 +3,5 @@ implementation-notes.md
 node_modules/
 .pi/
 pohuy-workspace/
+opencode/.build.*/
+opencode/.build-test.*/
